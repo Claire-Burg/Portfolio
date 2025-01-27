@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Form</title>
+</head>
+<body>
+    <h3>Enter name in first box, then class in second</h3>
+    <input id="name" type="text" placeholder="Enter your name">
+    <input id="class" type="text" placeholder="Enter your class">
+    <button type="button" onclick="displayInfo()">Submit</button>
+    <p id="demo"></p>
+    <script>
+        function displayInfo() {
+            let userName = document.getElementById("name").value;
+            let userClass = document.getElementById("class").value;
+            document.getElementById("demo").innerHTML =
+                "Hello " + userName + ", you are part of " + userClass;
+        }
+    </script>
+</body>
+</html>
